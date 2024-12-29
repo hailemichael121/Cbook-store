@@ -16,5 +16,4 @@ void listBooks(const std::vector<Book>& books);
 Book* searchBookByTitle(std::vector<Book>& books, const std::string& title);
 void borrowBook(Book& book);
 void returnBook(Book& book);
-
 #endif
