@@ -6,14 +6,21 @@ using namespace std;
 int main() {
     vector<Book> books;
 
-    // Sample Test
-    addBook(books, 1, "The Alchemist", "Paulo Coelho");
-    addBook(books, 2, "1984", "George Orwell");
-    addBook(books, 3, "To Kill a Mockingbird", "Harper Lee");
-    addBook(books, 4, "Pride and Prejudice", "Jane Austen");
-    addBook(books, 5, "The Great Gatsby", "F. Scott Fitzgerald");
+    int roleOption;
 
-     vector<Book> books;
-    handleUserInput(books);
+    cout << "Select Role:\n";
+    cout << "1. Admin\n";
+    cout << "2. User\n";
+    cout << "Enter your role: ";
+    cin >> roleOption;
+
+    if (roleOption == 1) {
+        handleAdminOptions(books);
+    } else if (roleOption == 2) {
+        handleUserOptions(books);
+    } else {
+        cout << "Invalid role! Exiting...\n";
+    }
+
     return 0;
 }

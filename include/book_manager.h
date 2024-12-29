@@ -18,4 +18,8 @@ Book* searchBookByAuthor(std::vector<Book>& books, const std::string& author);vo
 void returnBook(Book& book);
 void displayMenu();
 void handleUserInput(std::vector<Book>& books);
+enum Role { ADMIN, USER };
+void handleAdminOptions(std::vector<Book>& books);
+void handleUserOptions(std::vector<Book>& books);
+
 #endif

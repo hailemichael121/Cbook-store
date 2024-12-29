@@ -52,23 +52,16 @@ void returnBook(Book& book) {
     }
 }
 
-void displayMenu() {
-    cout << "\nLibrary Management System\n";
-    cout << "1. Add Book\n";
-    cout << "2. List Books\n";
-    cout << "3. Search Book by Title\n";
-    cout << "4. Search Book by Author\n";
-    cout << "5. Borrow Book\n";
-    cout << "6. Return Book\n";
-    cout << "7. Exit\n";
-    cout << "Select an option: ";
-}
-
-void handleUserInput(vector<Book>& books) {
+void handleAdminOptions(vector<Book>& books) {
     int option;
     while (true) {
-        displayMenu();
+        cout << "\nAdmin Menu\n";
+        cout << "1. Add Book\n";
+        cout << "2. List Books\n";
+        cout << "3. Exit\n";
+        cout << "Select an option: ";
         cin >> option;
+
         switch (option) {
             case 1: {
                 int id;
@@ -86,7 +79,31 @@ void handleUserInput(vector<Book>& books) {
             case 2:
                 listBooks(books);
                 break;
-            case 3: {
+            case 3:
+                return;
+            default:
+                cout << "Invalid option!\n";
+        }
+    }
+}
+
+void handleUserOptions(vector<Book>& books) {
+    int option;
+    while (true) {
+        cout << "\nUser Menu\n";
+        cout << "1. List Books\n";
+        cout << "2. Search Book by Title\n";
+        cout << "3. Borrow Book\n";
+        cout << "4. Return Book\n";
+        cout << "5. Exit\n";
+        cout << "Select an option: ";
+        cin >> option;
+
+        switch (option) {
+            case 1:
+                listBooks(books);
+                break;
+            case 2: {
                 string title;
                 cout << "Enter Title: ";
                 cin.ignore();
@@ -99,20 +116,7 @@ void handleUserInput(vector<Book>& books) {
                 }
                 break;
             }
-            case 4: {
-                string author;
-                cout << "Enter Author: ";
-                cin.ignore();
-                getline(cin, author);
-                Book* book = searchBookByAuthor(books, author);
-                if (book) {
-                    cout << "Book found: " << book->title << " by " << book->author << "\n";
-                } else {
-                    cout << "Book not found!\n";
-                }
-                break;
-            }
-            case 5: {
+            case 3: {
                 string title;
                 cout << "Enter Title to Borrow: ";
                 cin.ignore();
@@ -125,7 +129,7 @@ void handleUserInput(vector<Book>& books) {
                 }
                 break;
             }
-            case 6: {
+            case 4: {
                 string title;
                 cout << "Enter Title to Return: ";
                 cin.ignore();
@@ -138,8 +142,7 @@ void handleUserInput(vector<Book>& books) {
                 }
                 break;
             }
-            case 7:
-                cout << "Exiting...\n";
+            case 5:
                 return;
             default:
                 cout << "Invalid option!\n";
