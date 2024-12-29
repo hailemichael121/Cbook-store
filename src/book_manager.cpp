@@ -20,6 +20,13 @@ Book* searchBookByTitle(vector<Book>& books, const string& title) {
     return nullptr;
 }
 
+Book* searchBookByAuthor(vector<Book>& books, const string& author) {
+    for (auto& book : books) {
+        if (book.author == author) return &book;
+    }
+    return nullptr;
+}
+
 void borrowBook(Book& book) {
     if (!book.isBorrowed) {
         book.isBorrowed = true;
