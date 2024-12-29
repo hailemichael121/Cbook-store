@@ -13,16 +13,7 @@ int main() {
     addBook(books, 4, "Pride and Prejudice", "Jane Austen");
     addBook(books, 5, "The Great Gatsby", "F. Scott Fitzgerald");
 
-    cout << "Listing all books:\n";
-    listBooks(books);
-
-    Book* book = searchBookByTitle(books, "1984");
-    if (book) {
-        borrowBook(*book);
-        returnBook(*book);
-    } else {
-        cout << "Book not found.\n";
-    }
-
+     vector<Book> books;
+    handleUserInput(books);
     return 0;
 }
