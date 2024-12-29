@@ -16,4 +16,6 @@ void listBooks(const std::vector<Book>& books);
 Book* searchBookByTitle(std::vector<Book>& books, const std::string& title);
 Book* searchBookByAuthor(std::vector<Book>& books, const std::string& author);void borrowBook(Book& book);
 void returnBook(Book& book);
+void displayMenu();
+void handleUserInput(std::vector<Book>& books);
 #endif
