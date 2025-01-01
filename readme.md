@@ -53,7 +53,7 @@ MyCppProject/
 1. **Clone the repository:**
 
 ```bash
-git clone [<https://github.com/hailemichael121/Cbook-store.git>](https://github.com/hailemichael121/Cbook-store.git)
+git clone https://github.com/hailemichael121/Cbook-store.git
 cd MyCppProject
 ```
 
