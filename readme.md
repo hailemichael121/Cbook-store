@@ -174,8 +174,8 @@ This project is licensed under the **MIT License**. Feel free to use and modify 
 ## 👨‍💻 Author
 
 - **Name**: Hailemichael
-- **Email**: <hailemichael121@example.com>
-- **GitHub**: [github.com/username](https://github.com/username)
+- **Email**: <yihunaashe@gmail.com>
+- **GitHub**: [github.com/username](https://github.com/hailemichael12)
 
 ---
 
