@@ -53,7 +53,7 @@ MyCppProject/
 1. **Clone the repository:**
 
 ```bash
-git clone <repository-url>
+git clone [<https://github.com/hailemichael121/Cbook-store.git>](https://github.com/hailemichael121/Cbook-store.git)
 cd MyCppProject
 ```
 
@@ -175,7 +175,7 @@ This project is licensed under the **MIT License**. Feel free to use and modify 
 
 - **Name**: Hailemichael
 - **Email**: <yihunaashe@gmail.com>
-- **GitHub**: [github.com/username](https://github.com/hailemichael12)
+- **GitHub**: [github.com/hailemichael121](https://github.com/hailemichael12)
 
 ---
 
