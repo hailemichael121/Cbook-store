@@ -35,7 +35,7 @@ The **Library Management System** is a terminal-based C++ application designed t
 ### 📂 Project Structure
 
 ```
-MyCppProject/
+Cbook-store/
 ├── src/
 │   ├── main.cpp
 │   ├── book_manager.cpp
@@ -54,7 +54,7 @@ MyCppProject/
 
 ```bash
 git clone https://github.com/hailemichael121/Cbook-store.git
-cd MyCppProject
+cd Cbook-store
 ```
 
 2. **Build the project:**
